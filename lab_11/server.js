@@ -5,5 +5,8 @@ app.get('/', function(req, res){
 });
 app.get('/test', function(req, res){
     res.send('this is route 2');
-   });
-app.listen(8080);
+});
+app.get('/joke', function(req, res){
+res.send('What is a bee in the us called? a USB');
+});
+   app.listen(8080);
