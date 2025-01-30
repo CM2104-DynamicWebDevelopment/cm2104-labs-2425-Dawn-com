@@ -14,4 +14,5 @@ app.get('/add', function(req, res){
     var y = parseInt(req.query.y);
     res.send('X + Y='+(x+y));
 });
+app.use(express.static('public'))
 app.listen(8080);
