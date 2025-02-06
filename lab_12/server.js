@@ -36,7 +36,7 @@ async function getTracks(searchterm, res) {
         for(var i=0; i<tracks.length;i++){
        
         var track = tracks[i];
-        console.log(track.name);
+        //console.log(track.name);
         HTMLResponse = HTMLResponse +
         "<div>" +
         "<h2>"+track.name+"</h2>"+
@@ -44,7 +44,7 @@ async function getTracks(searchterm, res) {
         "<img src='"+track.album.images[0].url +"'>"+
         "<a href='"+track.external_urls.spotify+"'> Track Details </a>"+
         "</div>";
-        console.log(HTMLResponse);
+        //console.log(HTMLResponse);
         }
         res.send(HTMLResponse)
         }, function (err) {
