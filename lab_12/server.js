@@ -50,9 +50,6 @@ async function getTracks(searchterm, res) {
         }, function (err) {
         console.error(err);
        });
-        res.send(JSON.stringify(data.body));
-        }, function (err) {
-        console.error(err);
     });
 }
 app.listen(8080);
